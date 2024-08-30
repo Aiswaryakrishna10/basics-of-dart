@@ -2,17 +2,12 @@
 import 'dart:io';
 
 void main() {
-
   print("Enter the Number:");
   int n = int.parse(stdin.readLineSync()!);
 
-  print("Factorial of $n is ${fact(n)}");
-}
+  int fact = 1;
+  for(int i=1;i<=n;i++){
+    fact *=i;}
+    print("factorial is : $fact");
 
-int fact(int a) {
-  if (a <= 1) {
-    return 1;
-  } else {
-    return a * fact(a-1);
-  }
 }
